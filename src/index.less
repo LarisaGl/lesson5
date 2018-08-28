@@ -1,0 +1,238 @@
+@font-regular: 'Roboto-Regular';
+@main-border: #cccccc;
+@link-blue: #0183c7;
+@gray-background: #efefef;
+
+.__mixin__mobile-hide {
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: @font-regular;
+  src: url('/fonts/Roboto-Regular.ttf');
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 87px;
+}
+
+@media (max-width: 500px) {
+  body {
+    flex-flow: column;
+    margin-top: 52px;
+    margin-bottom: 58px;
+    margin-left: 50px;
+  }
+}
+
+.services {
+  width: 280px;
+
+  &__header {
+    width: 232px;
+    height: 56px;
+    font-family: @font-regular;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.17;
+    color: #333333;
+    padding: 84px 24px 87px 24px;
+    border-top: 1px solid @main-border;
+    border-bottom: 1px solid @main-border;
+    margin: 0px;
+  }
+
+  @media (max-width: 500px) {
+    &__header {
+      border: none;
+      padding-top: 0px;
+      padding-bottom: 45px;
+      width: 183px;
+      height: 84px;
+    }
+  }
+
+  &__items {
+    .__mixin__mobile-hide;
+
+    width: 232px;
+    height: 44px;
+    font-family: @font-regular;
+    font-size: 14px;
+    color: #666666;
+    border-bottom: 1px dashed @main-border;
+    padding-right: 24px;
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+
+    &__text {
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: @link-blue;
+    }
+  }
+}
+
+.tariff {
+  width: 220px;
+
+  &--blue {
+    margin-top: -28px;
+    width: 232px;
+    box-shadow: 0 0 25px 5px #cccccc;
+  }
+
+  @media (max-width: 500px) {
+    &--blue {
+      margin-top: 0px;
+      margin-left: -6px;
+    }
+  }
+
+  &__header {
+    background: @gray-background;
+    height: 229px;
+    text-align: center;
+
+    &--blue {
+      height: 242px;
+    }
+
+    &__caption {
+      height: 40px;
+      font-family: @font-regular;
+      font-size: 17px;
+      font-weight: normal;
+      line-height: 40px;
+      text-align: center;
+      color: #ffffff;
+      background: #02c741;
+      border-bottom: 4px solid #297341;
+      margin: 0px;
+
+      &--blue {
+        background: @link-blue;
+        border-bottom: 4px solid #3c7391;
+      }
+
+      &--orange {
+        background: #fca21e;
+        border-bottom: 4px solid #916a30;
+      }
+    }
+
+    &__description {
+      height: 18px;
+      width: 156px;
+      font-family: @font-regular;
+      font-size: 15px;
+      font-weight: normal;
+      line-height: 1.2;
+      color: #000;
+      margin-bottom: 40px;
+      margin-left: 32px;
+    }
+
+    &__button {
+      width: 114px;
+      height: 31px;
+      border-radius: 2px;
+      background-color: #017a28;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.6);
+      font-family: @font-regular;
+      font-size: 14px;
+      color: #ffffff;
+      border: none;
+
+      &--blue {
+        background-color: #008cb3;
+      }
+
+      &--orange {
+        background-color: #b07215;
+      }
+    }
+
+    &__price {
+      height: 23px;
+      font-family: @font-regular;
+      font-size: 17px;
+      color: #000;
+      margin-top: 14px;
+      margin-bottom: 2px;
+    }
+
+    &__time {
+      height: 18px;
+      font-family: @font-regular;
+      font-size: 13px;
+      color: @link-blue;
+      margin: 0px;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+  }
+
+  &__include {
+    .__mixin__mobile-hide;
+
+    height: 44px;
+    display: flex;
+    opacity: 0.87;
+    background-color: #fbfbfb;
+    border-bottom: 1px dashed @main-border;
+    justify-content: center;
+
+    &--support {
+      opacity: 0.26;
+      margin-right: 4px;
+    }
+
+    &--blue {
+      height: 49px;
+    }
+  }
+
+  &__footer {
+    .__mixin__mobile-hide;
+
+    height: 104px;
+    background-color: @gray-background;
+    text-align: center;
+
+    &--blue {
+      height: 120px;
+    }
+
+    &__star {
+      padding-top: 23px;
+
+      &__reviews {
+        height: 16px;
+        font-family: @font-regular;
+        font-size: 12px;
+        color: @link-blue;
+        margin-top: 8.9px;
+        margin-bottom: 6px;
+      }
+    }
+
+    &__faq {
+        text-decoration: none;
+        height: 16px;
+        font-family: @font-regular;
+        font-size: 12px;
+        color: @link-blue;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>table1/star/half</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="86.6827714%" y1="49.9781489%" x2="12.7364309%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#C2C2C0" offset="0%"></stop>
+            <stop stop-color="#C2C2C2" offset="49.5974171%"></stop>
+            <stop stop-color="#FFA21F" offset="52.5543894%"></stop>
+            <stop stop-color="#FDA31F" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="9.5 14.9833367 3.62867711 18.0700738 4.75 11.5322597 -1.64868119e-14 6.90215402 6.56433855 5.94829979 9.5 0 12.4356614 5.94829979 19 6.90215402 14.25 11.5322597 15.3713229 18.0700738"></polygon>
+        <filter x="-2.6%" y="-2.8%" width="105.3%" height="111.1%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="table1/star/half" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Star-half">
+            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+        </g>
+    </g>
+</svg>
